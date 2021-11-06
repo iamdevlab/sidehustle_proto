@@ -14,7 +14,7 @@ import '../profile_account/view/profile_page.dart';
 
 class Routes {
   static const String landingPage = '/';
-  static const String profilePage = '/';
+  static const String profilePage = '/profile-page';
   static const all = <String>{
     landingPage,
     profilePage,
