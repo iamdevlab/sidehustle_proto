@@ -17,3 +17,4 @@ samples, guidance on mobile development, and a full API reference.
 
   git config --global user.email "you@example.com"
   git config --global user.name "Your Name"
+  flutter pub run build_runner build --delete-conflicting-outputs
