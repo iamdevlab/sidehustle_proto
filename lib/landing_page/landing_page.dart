@@ -3,6 +3,8 @@ import 'package:floating_bottom_navigation_bar/floating_bottom_navigation_bar.da
 import 'package:flutter/material.dart';
 import 'package:sidehustle_prototype/community/view/community.dart';
 import 'package:sidehustle_prototype/dashboard/view/dashboard.dart';
+import 'package:sidehustle_prototype/lessons/view/lesson_view.dart';
+import 'package:sidehustle_prototype/quiz/view/quiz.dart';
 
 class LandingPage extends StatefulWidget {
   const LandingPage({Key? key}) : super(key: key);
@@ -18,6 +20,8 @@ class _LandingPageState extends State<LandingPage> {
 
   final List<Widget> _pages = [
     Dashboard(),
+    Quiz(),
+    LessonPage(),
     CommunityPage(),
   ];
 
@@ -28,6 +32,8 @@ class _LandingPageState extends State<LandingPage> {
       bottomNavigationBar: FloatingNavbar(
           items: [
             FloatingNavbarItem(icon: EvaIcons.home, title: "Dashboard"),
+            FloatingNavbarItem(icon: EvaIcons.archive, title: "Quiz"),
+            FloatingNavbarItem(icon: EvaIcons.book, title: "Lessons"),
             FloatingNavbarItem(icon: EvaIcons.activity, title: "Community"),
           ],
           currentIndex: _selectedPage,
